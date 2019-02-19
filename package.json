@@ -1,0 +1,11 @@
+{
+  "name": "post-wall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "set NODE_ENV=test&& jasmine"
+  },
+  "author": "Evgheni Curdov",
+  "license": "ISC"
+}
