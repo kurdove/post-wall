@@ -7,5 +7,12 @@
     "test": "set NODE_ENV=test&& jasmine"
   },
   "author": "Evgheni Curdov",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.0.0",
+    "request": "^2.83.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
