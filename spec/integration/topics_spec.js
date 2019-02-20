@@ -63,8 +63,10 @@ describe("routes : topics", () => {
         };
   
         it("should create a new topic and redirect", (done) => {
+            console.log("TITLE: ", options.title);
             request.post(options,
                 (err, res, body) => {
+                
                 Topic.findOne({where: {title: "blink-182 songs"}})
                 .then((topic) => {
                     console.log("TOPIC:", topic);

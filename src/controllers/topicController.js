@@ -16,13 +16,13 @@ module.exports = {
     },
 
     create(req, res, next){
+        console.log("TITLE: ", req.body.title);
         let newTopic = {
             title: req.body.title,
             description: req.body.description
         };
         
         topicQueries.addTopic(newTopic, (err, topic) => {
-            //console.log("ERROR:", err);
             if(err){
                 res.redirect(500, "/topics/new");
             } else {
